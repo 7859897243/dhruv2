@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       document.write(new Date().getDate());
+       document.write("-");
+       document.write(new Date().getMonth());
+       document.write("-");
+       document.write(new Date().getFullYear());
+       document.write("<br>");
+       document.write(new Date().getHours());
+       document.write(":");
+       document.write(new Date().getMinutes());
+       document.write(":");
+       document.write(new Date().getSeconds());
+       document.write("<br>");
+       
+    //    document.write("<h3>Example of switch statement for day</h3>");
+    //     document.write("<br>"); 
+
+       var x = window.prompt("");
+       switch (x){
+            case "1":
+                document.write("its January");
+                break;
+            case "2":
+                document.write("its feb");
+                break;
+            case "3":
+                document.write("its march");
+                break;
+            case "4":
+                document.write("its april");
+                break;
+            case "5":
+                document.write("its may");
+                break;
+            case "6":
+                document.write("its june");
+                break;
+            case "7":
+                document.write("its jul");
+                break;
+            case "8":
+                document.write("its aug");
+                break; 
+            case "9":
+                document.write("its sep");
+                break; 
+            case "10":
+                document.write("its oct");
+                break;
+            case "11":
+                document.write("its nov");
+                break;
+            case "12":
+                document.write("its dec");
+                break;  
+            default:
+                document.write("inccorrect input ");
+        }
+     
+    </script>
+</body>
+</html>

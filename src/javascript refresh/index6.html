@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <script>
+      document.write("<br>");
+        document.write("<h3> JavaScript for loop </h3>");
+        for (let index = 0; index <= 100; index++) {
+            document.writeln(index);
+        }
+
+        document.write("<br>")
+
+        for (var i=100; i>=0; i--){
+            document.writeln(i);
+        }
+
+        document.write("<br>")
+
+        var person={
+            firstname:"dj",
+            lastname:"toji",
+            age:17
+        }
+        document.writeln("<br>")
+        var temp = "";
+
+        for (value in person) {
+            document.writeln(value);
+            document.writeln("<br>")
+            document.writeln(":" + person[value] + "<br>");
+            document.writeln("<br>");
+            temp= temp + person[value]+ "";
+        }
+        document.writeln("<br>");
+       
+        // document.writeln(temp);
+        var alphabets=["A", "B", "C", "D"];
+        for (let i = 0; i <= alphabets.lenght-1;i++){
+            document.writeln(alphabets[i]);
+        }
+        document.writeln("<br>")
+        for (table of alphabets){
+            document.writeln(table);
+        }
+    </script>
+</body>
+</html>

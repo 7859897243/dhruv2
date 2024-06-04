@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import img1 from './images/img1.jpg';  
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <header>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact us </li>
+        </ul>
+      </nav>
+      <p>dsfkbsdkbkfkfBWRKBVKBJBRTIE dsfkbsdkbkfkfBWRKBVKBJBRTIEds  fkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIEdsfkbsdkbkfkfBWRKBVKBJBRTIE</p>
+      <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"></img>
+      <img src={img1}></img>
+    </header>
+    </>
   );
 }
 
