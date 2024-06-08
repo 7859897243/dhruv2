@@ -12,13 +12,12 @@ export default function TextForm(props) {
       setText(newText);
     }
 
-    const handUpchangee = () => {
+    const handleUpchange = () => {
       let newText = text.toLowerCase();
       setText(newText);
     }
 
     
-
     const handlespeak = () => {
       let newText = new SpeechSynthesisUtterance();
       newText.text = text;
@@ -31,15 +30,15 @@ export default function TextForm(props) {
       
     }
 
-    const handleCopy = () =>{
+    const handleCopy = () => {
       var newText = document.getElementById('exampleFormControlTextarea1');
       newText.select();
       navigator.clipboard.writeText(newText.value);
     }
-
-    const handleRemoveSpace = () =>{
+    
+    const handleRemoveSpace = () => {
       let newText = text.split(/[] + /);
-      setText(newText.join(" "));
+      setText(newText.join(""));
     }
 
   return (
@@ -48,16 +47,17 @@ export default function TextForm(props) {
         <h1>{props.heading}</h1>
   <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={text} onChange={handleonchange}></textarea>
   <button className='btn btn-outline-success my-3' onClick={handUpchange}>Convert to upper btn</button>
-  &nbsp;&nbsp;
-  <button className='btn btn-outline-success my-3' onClick={handUpchangee}>Convert to lower btn</button>
-  &nbsp;&nbsp;
+
+  <button className='btn btn-outline-secondary my-3' onClick={handleUpchange}>Convert to lower btn</button>
+
   <button className='btn btn-outline-success my-3' onClick={handlespeak}>speak</button>
-  &nbsp;&nbsp;
-  <button className='btn btn-outline-success my-3' onClick={handleclear}>Clear</button>
-  &nbsp;&nbsp;
-  <button className='btn btn-outline-success my-3' onClick={handleCopy}>Copy</button>
-  &nbsp;&nbsp;
-  <button className='btn btn-outline-success my-3' onClick={handleRemoveSpace}>RemoveSpace</button>
+
+  <button className='btn btn-outline-success my-3 ' onClick={handleclear}>Clear</button>
+
+  <button className='btn btn-outline-success my-3 ' onClick={handleCopy}>Copy</button>
+
+  <button className='btn btn-outline-success my-3 ' onClick={handleRemoveSpace}>Remove Space</button>
+
 
   </div>
 
@@ -70,6 +70,5 @@ export default function TextForm(props) {
     <p>{text}</p>
   </div>
 </div>
-   
-  )
-}
+    
+  )}
