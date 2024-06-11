@@ -34,7 +34,7 @@ export default function TextForm(props) {
       var newText = document.getElementById('exampleFormControlTextarea1');
       newText.select();
       navigator.clipboard.writeText(newText.value);
-    }
+    } 
     
     const handleRemoveSpace = () => {
       let newText = text.split(/[] + /);

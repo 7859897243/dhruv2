@@ -19,7 +19,7 @@ function App() {
     } else {
       setMode('light');
       document.body.style.background= 'white'
-      newbtnText('Enable dark mode')
+      newbtnText('Enable dark mode') 
     }
   }
   return (
