@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextArea from './components/TextArea';
 import img1 from './images/img1.jpg';  
-import AboutUS from './components/AboutUS';
+import AboutUss from './components/AboutUss';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <>
     <Navbar heading={"SIT"} />
     <TextArea heading={"TextArea"}  />
-    <AboutUS />
+    <AboutUss />
     </>
   );
 }
