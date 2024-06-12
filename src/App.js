@@ -1,32 +1,61 @@
-
 import { useState } from 'react';
 import './App.css';
-import Navbar from './components/Navbar.js';
-import TextForm from './components/TextForm.js';
-
+import Navbar from './components/Navbar.js'
+import TextForm from './components/TextForm.js'
 
 function App() {
 
-  const [mode, setMode] = useState('light')
+  const [mode , setMode] = useState('light')
 
-  const [btnText, newbtnText]= useState('Enable dark mode ')
-
-  const toggleMode = () => {
+  const toogleMode = () => {
     if (mode === 'light') {
-      setMode('dark');
-      document.body.style.background= 'black'
-      newbtnText('Enable dark mode')
+      setMode('dark')
+      document.body.style.background = "black"
+      document.body.style.color = "white"
+      setmyText("Enable Dark Mode");
     } else {
-      setMode('light');
-      document.body.style.background= 'white'
-      newbtnText('Enable dark mode') 
+      setMode('light')
+      document.body.style.background = "white"
+      document.body.style.color = "black"
+      setmyText("Enable Light Mode");
     }
   }
+
+
+  const toogleMode2 = () => {
+    if (mode === 'light') {
+      setMode('dark')
+      document.body.style.background = "green"
+      document.body.style.color = "yellow"
+    } 
+    else {
+      setMode('light')
+      document.body.style.background = "white"
+      document.body.style.color = "black"
+    }
+  }
+  
+  const toogleMode3 = () => {
+    if (mode === 'light') {
+      setMode('dark')
+      document.body.style.background = "red"
+      document.body.style.color = "blue"
+    } 
+    else {
+      setMode('light')
+      document.body.style.background = "white"
+      document.body.style.color = "black"
+    }
+  }
+
+
+  const [myText , setmyText] = useState ('Enable Dark Mode');
+
   return (
-    <>
-    <Navbar title="SIT" aboutText="Contact us" mode={mode} toggleMode = {toggleMode} btnText={btnText}/>
-    <TextForm heading="enter your text here" mode={mode} toggleMode={toggleMode}/>
-    </>
+  <>
+  <Navbar title = "SIT" aboutText="Abour Us" mode={mode} toogleMode={toogleMode} myText={myText} toogleMode2={toogleMode2} toogleMode3={toogleMode3}/>
+  <TextForm heading="Enter your text" mode={mode} toogleMode={toogleMode}/>
+  </>
   );
 }
 
